@@ -2,12 +2,9 @@ package org.skypro.counter_service.repository;
 
 import org.skypro.counter_service.model.Question;
 import org.springframework.stereotype.Repository;
-import org.skypro.counter_service.repository.QuestionRepository;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
+import java.util.Random;
+import java.util.*;
 
 @Repository
 public class JavaQuestionRepository implements QuestionRepository {
@@ -30,5 +27,15 @@ public class JavaQuestionRepository implements QuestionRepository {
     @Override
     public Collection<Question> getAll() {
         return Collections.unmodifiableSet(questions);
+
     }
-}
+    @Override
+    public Question getRandomQuestion() {
+        List<String> list = List.of("");
+        Random random = new Random();
+        int randomIndex = random.nextInt(list.size());
+        String randomElement = list.get(randomIndex);
+        System.out.println(randomElement);
+        return null;
+    }
+    }

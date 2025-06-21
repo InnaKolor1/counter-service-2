@@ -4,6 +4,7 @@ import org.skypro.counter_service.model.Question;
 import org.skypro.counter_service.repository.JavaQuestionRepository;
 import org.skypro.counter_service.repository.QuestionRepository;
 import org.assertj.core.api.Assertions;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -56,4 +57,7 @@ public class JavaQuestionRepositoryTest {
                         new Question("Java вопрос 3", "Java ответ 3")
                 );
     }
-}
+
+
+        }
+

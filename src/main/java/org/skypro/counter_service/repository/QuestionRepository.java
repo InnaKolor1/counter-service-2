@@ -12,4 +12,7 @@ public interface QuestionRepository {
 
     public Collection<Question> getAll();
 
+    default Question getRandomQuestion() {
+        return null;
+    }
 }

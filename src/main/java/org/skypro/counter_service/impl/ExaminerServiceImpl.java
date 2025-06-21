@@ -44,5 +44,4 @@ public class ExaminerServiceImpl implements ExaminerService {
         }
         return randomQuestions;
     }
-
             }

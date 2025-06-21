@@ -6,6 +6,8 @@ import org.skypro.counter_service.repository.QuestionRepository;
 import org.skypro.counter_service.service.QuestionService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import java.util.Random;
+import java.util.List;
 
 import java.util.*;
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.skypro.counter_service.controller.JavaQuestionController;
-
+import org.skypro.counter_service.repository.QuestionRepository;
 import java.util.Collection;
 
 @RestController

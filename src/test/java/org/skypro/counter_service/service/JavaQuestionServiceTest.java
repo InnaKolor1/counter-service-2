@@ -10,6 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
+
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.skypro.counter_service.impl.JavaQuestionService;
 
@@ -81,6 +82,12 @@ public class JavaQuestionServiceTest {
                         new Question("Java вопрос 2", "Java ответ 2"),
                         new Question("Java вопрос 3", "Java ответ 3")
                 );
-    }
+        try {
+            int result = 10 / 0;
+            System.out.println(result);
+        } catch (ArithmeticException e) {
+            System.err.println("Ошибка: деление на ноль!");
+        }
 
+    }
 }

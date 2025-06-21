@@ -10,6 +10,7 @@ import org.skypro.counter_service.model.Question;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Random;
 import java.util.Set;
 
 @Repository
@@ -33,6 +34,11 @@ public class MathQuestionRepository implements QuestionRepository {
     @Override
     public Collection<Question> getAll() {
         return Collections.unmodifiableSet(mathQuestions);
+    }
+
+    @Override
+    public Question getRandomQuestion() {
+        return null;
     }
 
     public Set<Question> getMathQuestions() {
