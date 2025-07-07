@@ -22,6 +22,7 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 public class ExaminerServiceImplTest {
 
+
     @Mock
     private JavaQuestionService javaQuestionService;
 

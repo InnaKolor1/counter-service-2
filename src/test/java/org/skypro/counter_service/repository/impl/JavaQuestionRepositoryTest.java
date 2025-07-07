@@ -13,7 +13,6 @@ public class JavaQuestionRepositoryTest {
 
     private final QuestionRepository questionRepository = new JavaQuestionRepository();
 
-
     @BeforeEach
     public void beforeEach() {
         questionRepository.add("Java вопрос 1", "Java ответ 1");
