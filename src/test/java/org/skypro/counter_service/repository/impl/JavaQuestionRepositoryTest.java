@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 
 public class JavaQuestionRepositoryTest {
 
+
     private final QuestionRepository questionRepository = new JavaQuestionRepository();
 
     @BeforeEach

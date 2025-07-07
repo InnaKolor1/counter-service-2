@@ -12,7 +12,6 @@ public interface QuestionService {
         return "Hello, " + name;
     }
 
-
     public Question add(String question, String answer);
 
     public Question remove(Question question);

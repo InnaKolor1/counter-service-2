@@ -44,6 +44,7 @@ public class MathQuestionService implements QuestionService {
         return repository.getAll();
     }
 
+
     @Override
     public Question getRandomQuestion() {
         Random random = new Random();

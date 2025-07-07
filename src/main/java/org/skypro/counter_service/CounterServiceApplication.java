@@ -10,4 +10,5 @@ public class CounterServiceApplication {
 		SpringApplication.run(CounterServiceApplication.class, args);
 	}
 
+
 }

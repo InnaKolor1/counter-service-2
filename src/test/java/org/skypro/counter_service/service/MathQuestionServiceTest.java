@@ -28,7 +28,6 @@ import static org.skypro.counter_service.impl.MathQuestionService.*;
 @ExtendWith(MockitoExtension.class)
 public class MathQuestionServiceTest {
 
-
     @Mock
     private QuestionRepository repository;
 

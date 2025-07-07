@@ -13,6 +13,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping("/exam")
+
 public class JavaQuestionController {
 
     private final QuestionService service;

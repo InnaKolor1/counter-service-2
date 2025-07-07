@@ -10,6 +10,7 @@ import org.skypro.counter_service.handler.ExaminerServiceImplHandler;
 
 import java.util.UUID;
 
+
 @RestControllerAdvice
 public class ExaminerServiceImplHandler {
 

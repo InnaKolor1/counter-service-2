@@ -14,6 +14,7 @@ import java.util.*;
 @Service
 public class JavaQuestionService implements QuestionService {
 
+
     private final QuestionRepository repository;
 
     public JavaQuestionService(@Qualifier("javaQuestionRepository") QuestionRepository repository) {

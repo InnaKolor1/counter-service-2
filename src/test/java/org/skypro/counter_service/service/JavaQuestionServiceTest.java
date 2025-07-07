@@ -22,6 +22,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class JavaQuestionServiceTest {
 
+
     @Mock
     private QuestionRepository repository;
 

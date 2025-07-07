@@ -13,6 +13,7 @@ public class MathQuestionRepositoryTest {
 
     private final QuestionRepository questionRepository = new MathQuestionRepository();
 
+
     @BeforeEach
     public void beforeEach() {
         questionRepository.add("Math вопрос 1", "Math ответ 1");

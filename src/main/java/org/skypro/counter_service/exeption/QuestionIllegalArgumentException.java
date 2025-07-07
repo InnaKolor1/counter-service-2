@@ -10,3 +10,4 @@ public class QuestionIllegalArgumentException extends RuntimeException {
     public QuestionIllegalArgumentException() {
     }
 }
+
