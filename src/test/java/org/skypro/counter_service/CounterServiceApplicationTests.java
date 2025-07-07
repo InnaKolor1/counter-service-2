@@ -9,5 +9,4 @@ class CounterServiceApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

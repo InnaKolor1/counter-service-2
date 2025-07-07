@@ -88,6 +88,5 @@ public class JavaQuestionServiceTest {
         } catch (ArithmeticException e) {
             System.err.println("Ошибка: деление на ноль!");
         }
-
     }
 }
