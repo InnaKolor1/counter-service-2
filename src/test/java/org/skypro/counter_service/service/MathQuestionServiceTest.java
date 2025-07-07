@@ -1,22 +1,29 @@
 package org.skypro.counter_service.service;
 
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.skypro.counter_service.exeption.QuestionNotFoundException;
 import org.skypro.counter_service.model.Question;
+import org.skypro.counter_service.repository.MathQuestionRepository;
 import org.skypro.counter_service.repository.QuestionRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import java.util.Random;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.skypro.counter_service.impl.MathQuestionService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.skypro.counter_service.service.QuestionService;
+
 
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.hamcrest.Matchers.hasSize;
+import static org.mockito.ArgumentMatchers.anyCollection;
+import static org.mockito.ArgumentMatchers.same;
 import static org.mockito.Mockito.when;
+import static org.skypro.counter_service.impl.MathQuestionService.*;
 
 @ExtendWith(MockitoExtension.class)
 public class MathQuestionServiceTest {
@@ -36,6 +43,7 @@ public class MathQuestionServiceTest {
     private Question question3;
 
     private Question question4;
+    private org.junit.jupiter.api.Assertions Assert;
 
     @BeforeEach
     public void beforeEach() {
@@ -50,6 +58,23 @@ public class MathQuestionServiceTest {
         questions.add(question3);
     }
 
+    @Test
+    void whenNameIsGiven() {
+        String name = "Test";
+        Assert.assertEquals("Hello, Test", greet(name));
+    }
+
+    @Test
+    void whenNameIsNull() {
+        String name = null;
+        Assert.assertEquals("Hello, Anonymous",greet(name));
+    }
+
+    @Test
+    void whenNameIsEmpty() {
+        String name = "";
+        Assert.assertEquals("Hello, Anonymous", MathQuestionRepository.greet(name));
+    }
 
     @Test
     public void addTest() {
@@ -81,11 +106,5 @@ public class MathQuestionServiceTest {
                         new Question("Math вопрос 2", "Math ответ 2"),
                         new Question("Math вопрос 3", "Math ответ 3")
                 );
-        try {
-            int result = 10 / 0;
-            System.out.println(result);
-        } catch (ArithmeticException e) {
-            System.err.println("Ошибка: деление на ноль!");
-        }
     }
 }

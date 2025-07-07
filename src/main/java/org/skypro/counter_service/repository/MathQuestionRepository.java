@@ -18,6 +18,9 @@ public class MathQuestionRepository implements QuestionRepository {
 
     private Set<Question> mathQuestions = new HashSet<>();
 
+    public static Object greet(String name) {
+        return null;
+    }
     @Override
     public Question add(String question, String answer) {
         Question newQuestion = new Question(question, answer);
@@ -39,9 +42,6 @@ public class MathQuestionRepository implements QuestionRepository {
     @Override
     public Question getRandomQuestion() {
         return null;
-    }
 
-    public Set<Question> getMathQuestions() {
-        return mathQuestions;
     }
 }

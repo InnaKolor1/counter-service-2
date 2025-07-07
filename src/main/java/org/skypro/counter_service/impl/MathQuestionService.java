@@ -13,11 +13,18 @@ import java.util.*;
 @Service
 public class MathQuestionService implements QuestionService {
 
-    private final QuestionRepository repository;
+    private static QuestionRepository repository;
 
     public MathQuestionService(@Qualifier("mathQuestionRepository") QuestionRepository repository) {
         this.repository = repository;
     }
+
+    public static int greet(String name) {
+        return 0;
+    }
+
+
+
 
     @Override
     public Question add(String question, String answer) {
@@ -32,9 +39,8 @@ public class MathQuestionService implements QuestionService {
         repository.remove(question);
         return question;
     }
-
     @Override
-    public Collection<Question> getAll() {
+ public Collection<Question> getAll() {
         return repository.getAll();
     }
 
