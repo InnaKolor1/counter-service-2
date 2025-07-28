@@ -31,7 +31,6 @@ public class ExaminerServiceImplHandler {
     public int getPower() {
         return 0;
     }
-
         @RestControllerAdvice
         static class JavaQuestionServiceHandler{
 
